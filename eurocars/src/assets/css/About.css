@@ -1,0 +1,37 @@
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-container h1, .about-container h2 {
+    color: #003366; /* Dark blue to match your theme */
+  }
+  
+  .about-container p {
+    line-height: 1.6;
+  }
+  
+  .about-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-container ul li {
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .about-container ul li::before {
+    content: '•';
+    color: #003366; /* Dark blue to match your theme */
+    position: absolute;
+    left: 0;
+  }
+  
+  .about-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+  

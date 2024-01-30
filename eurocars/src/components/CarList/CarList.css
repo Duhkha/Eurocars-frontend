@@ -1,0 +1,140 @@
+.car-list-page {
+    display: flex;
+    justify-content: space-between; /* This separates the car list and filter */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 1rem; /* Spacing between car list and filter */
+}
+
+.car-list-container {
+    flex-grow: 1; /* Car list takes up the remaining space */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens, adjust as necessary */
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* Pagination controls */
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    grid-column: 1 / -1; 
+  }
+  
+  .pagination-controls button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-controls button:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .pagination-controls button.active {
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+  }
+
+  
+  
+  .sort-controls select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+  }
+
+  .car-filter-container {
+    width: 300px; /* Adjust the width as needed */
+    margin-right: 1rem; /* Add margin to separate from the main content */
+  }
+  
+  
+
+/* Now, you'll also want to make sure that this layout is responsive */
+@media (max-width: 992px) {
+    .car-list-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  
+    .car-list-page {
+      flex-direction: column;
+    }
+  
+    .car-filter-container {
+      width: auto;
+      order: -1; /* Filter comes first */
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .car-list-container {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .sort-controls {
+      position: static; /* Sort control returns to the flow of the document */
+      order: -2; /* Sort controls come before the filter */
+    }
+  }
+
+  /* new */
+
+
+.car-list-page {
+  display: grid;
+  grid-template-columns: auto 300px; /* Main content and sidebar */
+  gap: 1rem; /* Spacing between main content and sidebar */
+  align-items: start; /* Align the items to the start of the page */
+}
+
+.car-list-container {
+  display: grid;
+  grid-template-rows: auto 1fr; /* Sort controls row and car cards row */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for the car cards */
+  gap: 1rem;
+  padding: 1rem 0; /* Padding top and bottom */
+}
+
+.sort-controls {
+  grid-column: 1 / -1; /* Span across all columns in the car list container */
+  justify-self: start; /* Align to the start of the grid row */
+  padding: 0 1rem; /* Padding left and right */
+  margin-bottom: 1rem; /* Space below the sort controls */
+}
+
+/* Rest of your CSS for .pagination-controls and other elements remains the same */
+
+/* Responsive adjustments for the .car-list-container */
+@media (max-width: 992px) {
+  .car-list-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .car-list-page {
+    grid-template-columns: 1fr; /* Stack sidebar and main content */
+  }
+
+  .car-list-container {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .car-list-container {
+    grid-template-rows: auto 1fr; /* Adjust the grid-template-rows for mobile */
+  }
+}
+
+
+

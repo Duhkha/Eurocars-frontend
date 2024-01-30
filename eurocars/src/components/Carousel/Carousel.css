@@ -1,0 +1,21 @@
+/* Carousel.css */
+.col-12.col-md-3.m-3 {
+    width: 100% !important; /* or any other value that suits your layout */
+  }
+  
+ 
+
+  .slick-next {
+	right: 11px;
+    color: #000; /* Arrow color */
+}
+
+.slick-prev {
+	z-index: 1;
+    left: 32px;
+    
+}
+
+.slick-slider{
+    background-color: #032642;
+}

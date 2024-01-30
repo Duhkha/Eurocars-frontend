@@ -1,0 +1,113 @@
+.car-filter-container {
+    width: 300px; /* Adjust width as needed */
+    background-color: #0D3F64; /* Set the background color as specified */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #ffffff; /* Set text color to white for better contrast */
+}
+
+.filter-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /* Ensure the title is visible on the dark background */
+}
+
+.filter-section {
+    margin-bottom: 15px;
+    background-color: #ffffff; /* Set the background of each filter section to white */
+    padding: 10px; /* Add padding to filter sections */
+    border-radius: 4px; /* Add border radius to filter sections */
+}
+
+.filter-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0D3F64; /* Set label color back to dark blue for contrast with white background */
+}
+
+/* Styling for the select elements - React Select */
+.basic-multi-select, .basic-multi-select * {
+    width: 100%;
+    border-radius: 4px; /* Add border radius to select elements */
+}
+
+/* Styling for the range selectors (price, mileage, year) */
+.price-range select, .mileage-range select, .year-range select {
+    width: calc(50% - 10px);
+    margin: 5px 0; /* Add margin for visual spacing */
+    border: 1px solid #0D3F64; /* Add border to select elements */
+}
+
+/* Style the button to match the design in the image */
+.apply-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px; /* Add margin to the top of the button */
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Checkbox and label styling for better visual */
+.checkbox-group label {
+    display: block;
+    margin: 5px 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style the dropdowns and multi-selects to match the overall design */
+.select__control {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 4px;
+}
+
+.select__menu {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* This will ensure that labels in the checkbox group have black text */
+.checkbox-group label {
+    color: #000; /* Set the color to black for visibility */
+}
+
+
+.apply-button {
+    width: 100%;
+    padding: 12px 20px; /* Adjust padding to your preference */
+    background-color: #0D3F64; /* The blue background color for the button */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for the button text */
+    font-weight: bold; /* Bold font weight for the button text */
+    cursor: pointer;
+    text-align: center; /* Center the text within the button */
+    display: block; /* Display block to fill the container */
+    outline: none; /* Remove the focus outline for a cleaner look */
+    margin: 0; /* Reset margin */
+    box-shadow: none; /* Remove box-shadow if not desired */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    -webkit-appearance: none; /* Remove default styling on iOS */
+    -moz-appearance: none; /* Remove default styling on Firefox */
+    appearance: none; /* Remove default styling */
+}
+
+.apply-button:hover, .apply-button:focus {
+    background-color: #026482; /* Darker shade for interactive feedback on hover */
+    outline: none; /* Ensure no outline on focus for a clean look */
+}
+
